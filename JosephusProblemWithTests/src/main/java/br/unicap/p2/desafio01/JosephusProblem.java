@@ -9,10 +9,31 @@ public class JosephusProblem {
         int countEliminated = 0;
         int currentPos = -1;
 
-        while(currentPos < n){
-
+        while (countEliminated < n) {
+            countEliminated = moveNext(positions, n, m, currentPos);
         }
-    
+
+        seqEliminated[countEliminated] = currentPos;
+        positions[currentPos] = -1;
+        countEliminated++;
+
+        return seqEliminated;
     }
 
+    public static int moveNext(int[] positions, int n, int m, int currentPos) {
+
+        int leaps = 0;
+
+        while (leaps < m) {
+            currentPos++;
+            currentPos = currentPos % m;
+            boolean isDead = positions[currentPos] == -1;
+
+            if (isDead) {
+                continue;
+            }
+            leaps++;
+        }
+        return currentPos;
+    }
 }
