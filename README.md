@@ -1,9 +1,9 @@
 # O que é este repositório? What is this repository?
 
 
-Apenas para guardar arquivos de aprendizados em aulas de p1
+Apenas para guardar arquivos de aprendizados em aulas de p2
 
-Just to save learning files in p1 lessons
+Just to save learning files in p2 lessons
 
 
 # Como uso? How Works?
